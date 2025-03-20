@@ -21,12 +21,13 @@ In traditional Shiny applications, the app is divided into two main components:
 
 This clear separation helps structure Shiny apps and makes them highly flexible.
 
-Quarto dashboards break this dichotomy: they automatically create dedicated boxes for each output object, so you are restricted in how to design the UI. Instead of manually defining an output slot in the UI, you simply reference it in the Quarto document.
+Quarto dashboards break this dichotomy: they automatically create dedicated boxes for each output object, so you are restricted in how to design the UI. Instead of manually defining the UI, you simply reference it in the Quarto document.
 
-The idea of `tatami` modules is to facilitate placing the outputs directly in the `.qmd` file.
-
+The idea of `tatami` modules is to facilitate laying out the outputs directly in the `.qmd` file - like tatami mats. 
 
 ## Roadmap
+
+The framework is still highly experimental and work-in-progress. Here is the plan:
 
 - [ ] Create working example with modular architecture (multiple modules, tests, config, css, etc.)
 - [ ] Create helper functions for initialization a new app
@@ -34,10 +35,11 @@ The idea of `tatami` modules is to facilitate placing the outputs directly in th
 
 ## Getting Started
 
-To test the app, clone this repo and run:
+To test the app, clone this repo, install the required packages and run:
 
 ```r
 # install.packages("shiny")
 # install.packages("quarto")
 quarto::quarto_serve("index.qmd")
 ```
+
