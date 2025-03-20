@@ -1,5 +1,8 @@
 # tatami
 
+> [!IMPORTANT]  
+> The project is still in a Proof of Concept phase. If you have ideas or feature requests, please consider opening an issue.
+
 Quarto dashboards provide an accessible way to create interactive web applications using Python, R, Julia, and Observable. They simplify the development of Shiny apps by serving them through a single file, typically `index.qmd`. However, placing all server and UI logic in a single file can lead to messy, hard-to-maintain, and untestable code. Since Quarto dashboards support multiple files (see [official docs]((https://quarto.org/docs/interactive/shiny/execution.html#multiple-files))), there’s an opportunity to organize and modularize Quarto-based Shiny applications effectively.
 
 `tatami` is an opinionated framework designed to bring structure and maintainability to Quarto dashboards. Inspired by modular tatami mats, this framework helps break down Shiny apps into reusable, testable components, making it easier to scale and collaborate.
