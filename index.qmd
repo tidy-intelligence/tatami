@@ -8,7 +8,7 @@ brand: inst/_brand.yml
 
 ```{r}
 #| context: setup
-library(tatami)
+pkgload::load_all()
 
 # TODO: add config loading
 # TODO: add theme settings vis css / scss
