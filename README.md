@@ -6,9 +6,9 @@ Quarto dashboards provide an accessible way to create interactive web applicatio
 
 There are already excellent frameworks for building production-ready, structured, and scalable Shiny applications:
 
-- `golem` encourages best practices by structuring the Shiny apps as an R package, with built-in functions for module creation and testing.
-- `rhino` treats Shiny apps as a software engineering project rather than an R package, using `box` modules for modularization.
-- `leprechaun` provides a lighweight alternative to `golem`, reducing boilerplate while maintaining structure.
+- [`golem`](https://github.com/ThinkR-open/golem) encourages best practices by structuring the Shiny apps as an R package, with built-in functions for module creation and testing.
+- [`rhino`](https://github.com/Appsilon/rhino) treats Shiny apps as a software engineering project rather than an R package, using `box` modules for modularization.
+- [`leprechaun`](https://github.com/devOpifex/leprechaun) provides a lighweight alternative to `golem`, reducing boilerplate while maintaining structure.
 
 `tatami` complements these frameworks by bringing a Quarto-native approach to modularization, allowing developers to: (i) organize Quarto dashboards into structured components; (ii) maintain sepration of UI, server logic, and modules; and (iii) improve testability and collaboration.
 
