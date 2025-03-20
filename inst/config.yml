@@ -1,0 +1,6 @@
+default:
+  greeting: "Hello, world!"
+  
+production:
+  greeting: "Hey there!"
+  

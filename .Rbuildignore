@@ -1,0 +1,7 @@
+^test\.Rproj$
+^\.Rproj\.user$
+^\.leprechaun$
+index_files
+index.htmlm
+index.qmd
+^LICENSE\.md$

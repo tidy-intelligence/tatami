@@ -1,0 +1,44 @@
+---
+title: "tatami"
+author: "Christoph Scheuch"
+format: dashboard
+server: shiny
+brand: inst/_brand.yml
+---
+
+```{r}
+#| context: setup
+library(tatami)
+
+# TODO: add config loading
+# TODO: add theme settings vis css / scss
+# TODO: dynamic creation of _brand.yml path?
+```
+
+```{r}
+#| context: data
+context_data()
+```
+
+# {.sidebar}
+
+```{r}
+clusters_input(input)
+```
+
+# Plot
+
+```{r}
+clusters_output("plot", output)
+```
+
+# Table
+
+```{r}
+clusters_output("table", output)
+```
+
+```{r}
+#| context: server
+clusters_server(input, output)
+```

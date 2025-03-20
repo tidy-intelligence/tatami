@@ -1,0 +1,12 @@
+color:
+  primary: black
+
+logo: 
+  medium: logo.png
+
+typography:
+  fonts:
+    - family: Open Sans
+      source: google
+  base: Open Sans
+  headings: Open Sans
