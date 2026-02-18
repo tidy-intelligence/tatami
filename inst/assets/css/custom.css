@@ -1,0 +1,17 @@
+/* Custom styles for the tatami dashboard */
+
+.sidebar .form-group {
+    margin-bottom: 1rem;
+}
+
+.shiny-text-output {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+pre.shiny-text-output {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+}

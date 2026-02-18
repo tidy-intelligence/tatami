@@ -32,8 +32,8 @@ The idea of `tatami` modules is to facilitate laying out the outputs directly in
 
 The framework is still highly experimental and work-in-progress. Here is the plan:
 
-- [ ] Create working example with modular architecture (multiple modules, tests, config, css, etc.)
-- [ ] Create helper functions for initialization a new app
+- [x] Create working example with modular architecture (multiple modules, tests, config, css, etc.)
+- [x] Create helper functions for initialization a new app
 - [ ] Prepare for CRAN release
 
 ## Getting Started
