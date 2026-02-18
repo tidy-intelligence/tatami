@@ -4,15 +4,14 @@ author: "Christoph Scheuch"
 format: dashboard
 server: shiny
 brand: inst/_brand.yml
+css: inst/assets/css/custom.css
 ---
 
 ```{r}
 #| context: setup
 pkgload::load_all()
 
-# TODO: add config loading
-# TODO: add theme settings vis css / scss
-# TODO: dynamic creation of _brand.yml path?
+config <- get_config()
 ```
 
 ```{r}
@@ -38,7 +37,22 @@ clusters_output("plot", output)
 clusters_output("table", output)
 ```
 
+# Summary
+
+## Row
+
+```{r}
+summary_output("summary_table", output)
+```
+
+## Row
+
+```{r}
+summary_output("summary_stats", output)
+```
+
 ```{r}
 #| context: server
 clusters_server(input, output)
+summary_server(input, output)
 ```
