@@ -7,5 +7,6 @@
 ## usethis namespace: start
 #' @importFrom pkgload load_all
 #' @importFrom quarto quarto_serve
+#' @importFrom rstudioapi isAvailable openProject
 ## usethis namespace: end
 NULL

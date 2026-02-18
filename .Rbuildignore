@@ -5,3 +5,5 @@ index_files
 index.htmlm
 index.qmd
 ^LICENSE\.md$
+.gitkeep
+index.qmd
