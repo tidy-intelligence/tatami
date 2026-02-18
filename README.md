@@ -36,13 +36,77 @@ The framework is still highly experimental and work-in-progress. Here is the pla
 - [x] Create helper functions for initialization a new app
 - [ ] Prepare for CRAN release
 
-## Getting Started
+## Installation
 
-To test the app, clone this repo, install the required packages and run:
+You can install the development version of `tatami` from GitHub:
 
 ```r
-# install.packages("shiny")
-# install.packages("quarto")
+# install.packages("pak")
+pak::pak("tidy-intelligence/tatami")
+```
+
+## Getting Started
+
+### Create a new app
+
+Use `create_app()` to scaffold a new Quarto dashboard project:
+
+```r
+library(tatami)
+create_app("path/to/myapp")
+```
+
+This creates a project with the following structure:
+
+```
+myapp/
+├── R/
+│   ├── myapp-package.R
+│   ├── run.R
+│   ├── context_data.R
+│   └── config.R
+├── inst/
+│   ├── config.yml
+│   ├── _brand.yml
+│   └── assets/
+│       ├── css/
+│       └── img/
+├── tests/
+│   ├── testthat.R
+│   └── testthat/
+├── man/
+├── DESCRIPTION
+├── NAMESPACE
+└── index.qmd
+```
+
+### Add modules
+
+Use `add_module()` to generate a new module with input, output, and server functions, along with a test file:
+
+```r
+add_module("chart", path = "path/to/myapp")
+```
+
+This creates:
+- `R/mod_chart.R` with `chart_input()`, `chart_output()`, and `chart_server()` templates
+- `tests/testthat/test-mod_chart.R` with corresponding tests
+
+### Run the app
+
+Start the dashboard with:
+
+```r
+run_app()
+```
+
+Use `run_app(production = TRUE)` to load the production configuration profile from `inst/config.yml`.
+
+### Run the demo
+
+To try the built-in example, clone this repo, install the required packages, and run:
+
+```r
 quarto::quarto_serve("index.qmd")
 ```
 
